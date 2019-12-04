@@ -1,0 +1,150 @@
+CREATE TABLE `towers` (
+  `tower_id` int(10) NOT NULL COMMENT '',
+  `site_id_dmt` varchar(12) NOT NULL COMMENT '',
+  `site_name` varchar(40) NOT NULL COMMENT '',
+  `site_type` varchar(11) COMMENT '',
+  `regional` varchar(40) NOT NULL COMMENT '',
+  `alamat_act` varchar(150) NOT NULL COMMENT '',
+  `kota_kabupaten` varchar(20) NOT NULL COMMENT '',
+  `tower_leg` int(1) COMMENT '',
+  `tower_height` int(3) NOT NULL COMMENT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `towers` (`tower_id`, `site_id_dmt`, `site_name`, `site_type`, `regional`, `alamat_act`, `kota_kabupaten`, `tower_leg`, `tower_height`) VALUES
+(1, '100000000048', 'STO BANGKALAN', 'GREENFIELD', 'Jawa Timur', 'Jl. Trunojoyo Rt Rw No.11 Desa Pejagan Kec. Bangkalan Bangkalan Bangkalan 60235', 'Bangkalan', 4, 60),
+(2, '100000000105', 'Kedungrejo (split Muncar2_1)', 'GREENFIELD', 'Jawa Timur', 'Ds. Kedung Ringin  Ds. Kedung Ringin Kec. Muncar Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(3, '100000000107', 'Temuguruh', 'GREENFIELD', 'Jawa Timur', 'Dsn. Krajan Wetan Rt. 01 Rw. 03  Desa Temuguruh Kec. Sempu Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(4, '100000000108', 'Jalan Tombro', 'GREENFIELD', 'Jawa Timur', 'Jl. Ikan Tombro 29 Rt. 02 Rw. 01 No. 29 Banyuwangi Kec. Banyuwangi Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(5, '100000000109', 'Kalipuro (Ant. Giri - banyuwan', 'GREENFIELD', 'Jawa Timur', 'Lingk.Tirtopuro Rt/Rw 001/001  Kel.Kalipuro Kec.Kalipuro Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(6, '100000000111', 'Kedung Wungu', 'GREENFIELD', 'Jawa Timur', 'Rt 27 Rw 03 Desa Kedung Gebang  Desa Kedung Gebang Kec. Tegal Dlimo Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(7, '100000000112', 'Kepundungan', 'GREENFIELD', 'Jawa Timur', 'Desa Kepundungan Rt 04 Rw 02  Desa Kepundungan Kec. Srono Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(8, '100000000113', 'Tapanrejo', 'GREENFIELD', 'Jawa Timur', 'Rt 01 Rw 09 Desa Tapanrejo  Desa Tapanrejo Kec. Muncar Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(9, '100000000114', 'Karang Bendo Rogojampi', 'GREENFIELD', 'Jawa Timur', 'Jl.Jajag Surat Rt.02 Rw.02  Desa Karangbendo Kec.Rogojampi Banyuwangi Banyuwangi 60235', 'Banyuwangi', 4, 60),
+(10, '100000000258', 'Hulaan', 'GREENFIELD', 'Jawa Timur', 'Jl. Raya Hulaan Rt.17/07  Ds. Sido Jangkung Kec. Menganti Gresik Gresik 60235', 'Gresik', 4, 60),
+(11, '100000000261', 'Sekar Gadung (Ant. Dukun - Kar', 'GREENFIELD', 'Jawa Timur', 'Jl.Madumulyorejo Rt.02 Rw.01  Kel.Madumulyorejo Kec.Dukun Gresik Gresik 61155', 'Gresik', 4, 60),
+(12, '100000000293', 'Desa Andongsari', 'GREENFIELD', 'Jawa Timur', 'Desa Andongsari Rt03/Rw05  Desa Andongsari Kec. Ambulu Jember Jember 68172', 'Jember', 4, 60),
+(13, '100000000294', 'Dukuhmencek (split jember3_1)', 'GREENFIELD', 'Jawa Timur', 'Dukuh Mencek Rt03/Rw03  Desa Serut Kec. Panti Jember Jember 68153', 'Jember', 4, 60),
+(14, '100000000295', 'Keting', 'GREENFIELD', 'Jawa Timur', 'Ds. Jombang Rt01/Rw022  Ds. Jombang Kec. Jombang Jember Jember 61419', 'Jember', 4, 60),
+(15, '100000000328', 'Atr pesantren-Ds.Bangkok', 'GREENFIELD', 'Jawa Timur', 'Jl. Tempurejo Ii Rt 21 Rw 06  Kel.Tempurejo Kec.Pesantren  Kediri, Kota 64138', 'Kediri, Kota', 4, 60),
+(16, '100000000329', 'Ngampel (Split Merican_2)', 'GREENFIELD', 'Jawa Timur', 'Jl. Bunga Gg.5 Rt.016 Rw.003  Kel.Ngampel Kec.Mojoroto  Kediri, Kota 64112', 'Kediri, Kota', 4, 60),
+(17, '100000000330', 'STO PARE', 'GREENFIELD', 'Jawa Timur', 'Jl. Wr Supratman Rt02/Rw02 No.1 Desa Pare Kec. Pare  Kediri, Kota 60235', 'Kediri, Kota', 4, 60),
+(18, '100000000355', 'Karangtengah Kandangan', 'Green Field', 'Jawa Timur', 'Jl. Supriyadi Rt.02, Rw.02  Doko Kec. Doko Jombang Jombang 60235', 'Jombang', 4, 60),
+(19, '100000000356', 'Tambakrejo (Selatan Pasiraman)', 'GREENFIELD', 'Jawa Timur', 'Dusun Ringin Rejo Rt 01 Rw 09  Desa Kali Grenjeng Kec. Wonotirto Blitar Blitar 66173', 'Blitar', 4, 60),
+(20, '100000000359', 'KALISONGO', 'GREENFIELD', 'Jawa Timur', 'Dusun Condeang Rt.005/ Rw.04  Desa Kalisongo Dau Malang Malang 65151', 'Malang', 4, 60),
+(21, '100000000360', 'Balesari', 'GREENFIELD', 'Jawa Timur', 'Dsn. Balesari Rt01/Rw04  Ds. Balesari Kec. Ngajum Malang Malang 65164', 'Malang', 4, 60),
+(22, '100000000361', 'Gajahrejo (Sindurejo Sumberman', 'GREENFIELD', 'Jawa Timur', 'Dsn. Krajan Rt01/Rw01  Ds. Gajahrejo Kec. Gedangan Malang Malang 65178', 'Malang', 4, 60),
+(23, '100000000362', 'SENGGRENG', 'GREENFIELD', 'Jawa Timur', 'Desa Senggreng RT 07 RW 08  Kel Senggreng Kec. Sumberpucung Malang Malang 65165', 'Malang', 4, 60),
+(24, '100000000373', 'Sambirampak Kidul ex. Sidomuly', 'GREENFIELD', 'Jawa Timur', 'Dusun 1 RT.05/RW.02  Desa Sambirampak Kidul Kec. Kotaanyar Probolinggo Probolinggo 67293', 'Probolinggo', 4, 60),
+(25, '100000000374', 'Sebaung (PG Sebaung Probolingg', 'GREENFIELD', 'Jawa Timur', 'Ds. Sukun Rt 002 Rw 001  Desa Pendil Kec. Banyuanyar Probolinggo Probolinggo 67275', 'Probolinggo', 4, 60),
+(26, '100000000375', 'Bucor Kulon (Atr.Pakuniran-Kot', 'GREENFIELD', 'Jawa Timur', 'Krajan Rt 10 / 01  Desa Glagah Kecamatan Pakuniran Probolinggo Probolinggo 67292', 'Probolinggo', 4, 60),
+(27, '100000000376', 'Karangan XL', 'Green Field', 'Jawa Timur', 'Dsn. Tungguran RT 01 RW 03  Ds. Karangan Kec. Badegan Ponorogo Ponorogo 67261', 'Ponorogo', 4, 60),
+(28, '100000000439', 'Kaliuling', 'GREENFIELD', 'Jawa Timur', 'Dusun Jonggrang Rt.24/Rw.08  Desa Taman Ayu Kec. Pronojiwo Lumajang Lumajang 67374', 'Lumajang', 4, 60),
+(29, '100000000440', 'Rojopolo', 'GREENFIELD', 'Jawa Timur', 'Ds. Sokosari, Rt.02 / Rw.02  Ds. Sokosari Kec Jatiroto Lumajang Lumajang 67355', 'Lumajang', 4, 60),
+(30, '100000000489', 'Pingkuk', 'GREENFIELD', 'Jawa Timur', 'Dusun Bilang Rt.16 Rw.03  Ds. Pingkuk Kec. Bendo Magetan Magetan 63384', 'Magetan', 4, 60);
+
+ALTER TABLE `towers`
+  ADD PRIMARY KEY (`tower_id`),
+  ADD UNIQUE KEY `site_id_dmt` (`site_id_dmt`),
+  MODIFY `tower_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '';
+  
+CREATE TABLE `projects` (
+  `project_table_id` int(10) NOT NULL COMMENT '',
+  `tower_id` int(10) NOT NULL COMMENT '',
+  `project_id` varchar(11) NOT NULL COMMENT '',
+  `portofolio` varchar(15) NOT NULL COMMENT '',
+  `ubis` varchar(15) NOT NULL COMMENT '',
+  `plan_group` varchar(4) NOT NULL COMMENT '',
+  `user_stat_lv_1` varchar(5) NOT NULL COMMENT '',
+  `user_stat_lv_2` varchar(5) NOT NULL COMMENT '',
+  `nama_tenant` varchar(10) NOT NULL COMMENT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `projects` (`project_table_id`, `tower_id`, `project_id`, `portofolio`, `ubis`, `plan_group`, `user_stat_lv_1`, `user_stat_lv_2`, `nama_tenant`) VALUES
+(1, 1, '11TI01V0357', 'PAK - STO', 'CORE', 'TWR', 'INOP', 'INOP', 'TELKOM'),
+(2, 1, '12HC03C7754', 'RESELLER', 'CORE', 'RES', 'INOP', 'INOP', 'HCPT'),
+(3, 1, '12IS03C8072', 'RESELLER', 'CORE', 'RES', 'INOP', 'INOP', 'ISAT'),
+(4, 2, '11TS03B2296', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(5, 2, '15XL04C0107', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(6, 3, '11TS01B0561', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(7, 3, '16BS04C0004', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'IBS'),
+(8, 4, '15SF07C0005', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'SMART'),
+(9, 4, '11TS01B0573', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(10, 5, '11TS01B0576', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(11, 6, '11TS01B0569', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(12, 7, '11TS01B0571', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(13, 8, '11TS01B0572', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(14, 8, '17XL03C0198', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(15, 9, '11TS01B0449', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(16, 9, '15XL11C0027', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(17, 10, '10TF02B0345', 'B2S', 'B2S', 'TWR', 'INOP', 'DISP', 'FLEXI'),
+(18, 10, '14HC09C0001', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'HCPT'),
+(19, 10, '16TS05C0198', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'TSEL'),
+(20, 10, '17XL03C0190', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(21, 10, '17IS10C0006', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'ISAT'),
+(22, 10, '18BS09C0004', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'IBS'),
+(23, 11, '11TS01B0544', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(24, 12, '11TS03B2301', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(25, 12, '17XL02C0234', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(26, 13, '11TS03B2303', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(27, 13, '17XL02C0406', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'XL'),
+(28, 14, '11TS03B2302', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL'),
+(29, 14, '17HC05C0003', 'COLO', 'CORE', 'COL', 'INOP', 'INOP', 'HCPT'),
+(30, 15, '11TS01B0473', 'B2S', 'B2S', 'TWR', 'INOP', 'INOP', 'TSEL');
+
+ALTER TABLE `projects`
+  ADD PRIMARY KEY (`project_table_id`),
+  ADD UNIQUE KEY `project_id` (`project_id`),
+  ADD KEY `tower_id` (`tower_id`),
+  MODIFY `project_table_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '',
+  ADD CONSTRAINT `tower_id` FOREIGN KEY (`tower_id`) REFERENCES `towers` (`tower_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+CREATE TABLE `spaces` (
+  `space_id` int(10) NOT NULL COMMENT '',
+  `tower_id` int(10) NOT NULL COMMENT '',
+  `project_table_id` int(10) NOT NULL COMMENT '',
+  `leg` varchar(1) NOT NULL COMMENT '',
+  `height` int(3) NOT NULL COMMENT '',
+  `merk` varchar(30) NOT NULL COMMENT '',
+  `berat` int(3) NOT NULL COMMENT '',
+  `diameter` int(2) NOT NULL COMMENT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `spaces` (`space_id`, `tower_id`, `project_table_id`, `leg`, `height`, `merk`, `berat`, `diameter`) VALUES
+(1, 1, 1, 'B', 9, 'MERK', 1, 1),
+(2, 1, 2, 'A', 10, 'MERK', 2, 1),
+(3, 1, 3, 'D', 10, 'MERK', 3, 1),
+(4, 2, 4, 'C', 6, 'MERK', 4, 1),
+(5, 2, 5, 'A', 7, 'MERK', 1, 1),
+(6, 3, 6, 'A', 21, 'MERK', 2, 1),
+(7, 3, 7, 'D', 19, 'MERK', 3, 1),
+(8, 4, 8, 'D', 14, 'MERK', 4, 1),
+(9, 4, 9, 'A', 15, 'MERK', 1, 1),
+(10, 5, 10, 'A', 16, 'MERK', 2, 1),
+(11, 6, 11, 'C', 21, 'MERK', 3, 1),
+(12, 7, 12, 'C', 8, 'MERK', 4, 1),
+(13, 8, 13, 'B', 15, 'MERK', 1, 1),
+(14, 8, 14, 'A', 13, 'MERK', 2, 1),
+(15, 9, 15, 'B', 15, 'MERK', 3, 1),
+(16, 9, 16, 'D', 16, 'MERK', 4, 1),
+(17, 10, 17, 'A', 16, 'MERK', 1, 1),
+(18, 10, 18, 'D', 5, 'MERK', 2, 1),
+(19, 10, 19, 'D', 17, 'MERK', 3, 1),
+(20, 10, 20, 'A', 10, 'MERK', 4, 1),
+(21, 10, 21, 'A', 22, 'MERK', 1, 1),
+(22, 10, 22, 'C', 8, 'MERK', 2, 1),
+(23, 11, 23, 'C', 8, 'MERK', 3, 1),
+(24, 12, 24, 'C', 20, 'MERK', 4, 1),
+(25, 12, 25, 'D', 23, 'MERK', 1, 1),
+(26, 13, 26, 'A', 6, 'MERK', 2, 1),
+(27, 13, 27, 'B', 7, 'MERK', 3, 1),
+(28, 14, 28, 'A', 11, 'MERK', 4, 1),
+(29, 14, 29, 'C', 19, 'MERK', 1, 1),
+(30, 15, 30, 'B', 11, 'MERK', 2, 1);
+
+ALTER TABLE `spaces`
+  ADD PRIMARY KEY (`space_id`),
+  ADD KEY `tower_id` (`tower_id`),
+  ADD KEY `project_table_id` (`project_table_id`),
+  MODIFY `space_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '',
+  ADD CONSTRAINT `tower_table_id` FOREIGN KEY (`tower_id`) REFERENCES `towers` (`tower_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `project_table_id` FOREIGN KEY (`project_table_id`) REFERENCES `projects` (`project_table_id`) ON DELETE CASCADE ON UPDATE CASCADE;

@@ -1,0 +1,65 @@
+<div class="container">
+    <h3><i class="fa fa-pencil"></i> Edit Tower</h3>
+    <!-- Show Flash Session Data -->
+    <p><?= $this->flashSession->output() ?></p>
+
+    <?php
+        # URL Segments
+        $uri_segments = explode("/", $this->request->getUri());
+    ?>
+    <?= $this->tag->form("tower/edit/submit"); ?>
+
+        <div class="form-group">
+            <label for="tower_id">ID</label>
+            <?= $form->render('tower_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="site_id_dmt">Site ID</label>
+            <?= $form->render('site_id_dmt'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="site_name">Site Name</label>
+            <?= $form->render('site_name'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="site_type">Site Type</label>
+            <?= $form->render('site_type'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="regional">Regional</label>
+            <?= $form->render('regional'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat_act">Alamat</label>
+            <?= $form->render('alamat_act'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="kota_kabupaten">Kota/Kabupaten</label>
+            <?= $form->render('kota_kabupaten'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="tower_leg">Jumlah Leg</label>
+            <?= $form->render('tower_leg'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="tower_height">Tinggi Tower (m)</label>
+            <?= $form->render('tower_height'); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $form->render('publish'); ?>
+        </div>
+        
+        <?= $form->render('tower_id', ['value' => $uri_segments[3]]); ?>
+
+        <input type='hidden' name='<?= $this->security->getTokenKey() ?>' value='<?= $this->security->getToken() ?>'/>
+    <?= $this->tag->endForm() ?>
+</div>

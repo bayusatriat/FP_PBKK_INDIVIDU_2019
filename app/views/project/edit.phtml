@@ -1,0 +1,65 @@
+<div class="container">
+    <h3><i class="fa fa-pencil"></i> Edit Project</h3>
+    <!-- Show Flash Session Data -->
+    <p><?= $this->flashSession->output() ?></p>
+
+    <?php
+        # URL Segments
+        $uri_segments = explode("/", $this->request->getUri());
+    ?>
+    <?= $this->tag->form("project/edit/submit"); ?>
+
+        <div class="form-group">
+            <label for="project_table_id">Project Table ID</label>
+            <?= $form->render('project_table_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="tower_id">Tower ID</label>
+            <?= $form->render('tower_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="project_id">Project ID</label>
+            <?= $form->render('project_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="portofolio">Portofolio</label>
+            <?= $form->render('portofolio'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="ubis">Ubis</label>
+            <?= $form->render('ubis'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="plan_group">Plan Group</label>
+            <?= $form->render('plan_group'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="user_stat_lv_1">User Stat Lv 1</label>
+            <?= $form->render('user_stat_lv_1'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="user_stat_lv_2">User Stat Lv 2</label>
+            <?= $form->render('user_stat_lv_2'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="nama_tenant">Nama Tenant</label>
+            <?= $form->render('nama_tenant'); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $form->render('publish'); ?>
+        </div>
+        
+        <?= $form->render('project_id', ['value' => $uri_segments[3]]); ?>
+
+        <input type='hidden' name='<?= $this->security->getTokenKey() ?>' value='<?= $this->security->getToken() ?>'/>
+    <?= $this->tag->endForm() ?>
+</div>

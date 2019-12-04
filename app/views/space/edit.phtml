@@ -1,0 +1,60 @@
+<div class="container">
+    <h3><i class="fa fa-pencil"></i> Edit Project</h3>
+    <!-- Show Flash Session Data -->
+    <p><?= $this->flashSession->output() ?></p>
+
+    <?php
+        # URL Segments
+        $uri_segments = explode("/", $this->request->getUri());
+    ?>
+    <?= $this->tag->form("project/edit/submit"); ?>
+
+        <div class="form-group">
+            <label for="space_id">Space ID</label>
+            <?= $form->render('space_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="tower_id">Tower ID</label>
+            <?= $form->render('tower_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="project_table_id">Project Table ID</label>
+            <?= $form->render('project_table_id'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="leg">Leg</label>
+            <?= $form->render('leg'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="height">Height (m)</label>
+            <?= $form->render('height'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="merk">Merk</label>
+            <?= $form->render('merk'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="berat">Berat (kg)</label>
+            <?= $form->render('berat'); ?>
+        </div>
+
+        <div class="form-group">
+            <label for="diameter">Diameter (m)</label>
+            <?= $form->render('diameter'); ?>
+        </div>
+
+        <div class="form-group">
+            <?= $form->render('publish'); ?>
+        </div>
+        
+        <?= $form->render('project_id', ['value' => $uri_segments[3]]); ?>
+
+        <input type='hidden' name='<?= $this->security->getTokenKey() ?>' value='<?= $this->security->getToken() ?>'/>
+    <?= $this->tag->endForm() ?>
+</div>
